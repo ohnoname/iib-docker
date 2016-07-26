@@ -47,7 +47,7 @@ RUN chmod +rx /usr/local/bin/*.sh
 ENV BASH_ENV=/usr/local/bin/iib_env.sh
 
 # Expose default admin port and http port
-EXPOSE 4414 7800
+EXPOSE 4414 7800 11883
 
 USER iibuser
 
