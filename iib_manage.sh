@@ -19,7 +19,6 @@ stop()
 
 start()
 {
-	sudo /opt/ibm/iib-10.0.0.5/iib make registry global accept license silently
 	echo "----------------------------------------"
   /opt/ibm/iib-10.0.0.5/iib version
 	echo "----------------------------------------"
@@ -52,7 +51,7 @@ monitor()
 		sleep 1
 	done
 }
-
+sudo /opt/ibm/iib-10.0.0.5/iib make registry global accept license silently
 iib-license-check.sh
 start
 trap stop SIGTERM SIGINT
