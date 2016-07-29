@@ -51,8 +51,10 @@ monitor()
 		sleep 1
 	done
 }
+
 sudo /opt/ibm/iib-10.0.0.5/iib make registry global accept license silently
-iib-license-check.sh
+# iib-license-check.sh
+. /opt/ibm/iib-10.0.0.5/server/bin/mqsiprofile
 start
 trap stop SIGTERM SIGINT
 monitor
