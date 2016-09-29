@@ -20,7 +20,7 @@ RUN apt-get update && \
 
 # Install IIB V10 Developer edition
 RUN mkdir /opt/ibm && \
-    curl https://www.dropbox.com/s/y1jygd41764xo6y/10.0.0-IIB-LINUXX64-FP0006.tar.gz?dl=1 | tar zx --exclude iib-10.0.0.5/tools --directory /opt/ibm 
+    curl http://srv70.putdrive.com/putstorage/DownloadFileHash/5CC5AFA03A5A4A5QQWE2175047EWQS/iib-10.0.0.6.tar | tar zx --exclude iib-10.0.0.6/tools --directory /opt/ibm 
 
 # Configure system
 COPY kernel_settings.sh /tmp/
